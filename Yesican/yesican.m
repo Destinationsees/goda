@@ -83,9 +83,9 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 [filename pathname] = uigetfile({'*.txt'},'File Selector')
 
 % Read file
-audiofilePath = strcat(pathname, filename)
+% audiofilePath = strcat(pathname, filename)
 text = audioread(audiofilePath);
-set(handles.text3,'String',text)  % Showing FullpathName
+% set(handles.text3,'String',text)  % Showing FullpathName
 
 % --- Executes on button press in pushbutton2.
 function pushbutton2_Callback(hObject, eventdata, handles)
